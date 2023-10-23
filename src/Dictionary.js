@@ -34,9 +34,7 @@ export default function Dictionary() {
         </form>
         <small>e.g. sunset, code, matcha, recording</small>
       </section>
-      <section>
-        <Results results={results} />
-      </section>
+      <Results results={results} />
     </div>
   );
 }
