@@ -29,3 +29,8 @@ h2 {
 h3 {
   font-size: 24px;
 }
+
+.special-text {
+  color: #7d49ff;
+  text-decoration: none;
+}

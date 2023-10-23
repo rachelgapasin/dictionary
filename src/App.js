@@ -13,7 +13,26 @@ function App() {
       <main>
         <Dictionary />
       </main>
-      <footer className="text-center">Coded by Rachel Gapasin 👩🏽‍💻</footer>
+      <footer className="text-center">
+        <a
+          href="https://github.com/rachelgapasin/dictionary"
+          target="_blank"
+          rel="noreferrer"
+          className="special-text"
+        >
+          Open-source code
+        </a>{" "}
+        by{" "}
+        <a
+          href="https://rachelgapasin.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+          className="special-text"
+        >
+          Rachel Gapasin
+        </a>{" "}
+        👩🏽‍💻
+      </footer>
     </div>
   );
 }
