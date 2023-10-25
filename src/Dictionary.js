@@ -11,8 +11,13 @@ export default function Dictionary(props) {
   const [results, setResults] = useState(null);
   const [images, setImages] = useState(null);
   const [loaded, setLoaded] = useState(false);
+  const [error, setError] = useState(false);
 
   function handleDictionaryResponse(response) {
+    if (response.data[0].title === "No Definitions Found") {
+      setError(true);
+      return;
+    }
     setResults(response.data[0]);
   }
 
@@ -44,7 +49,7 @@ export default function Dictionary(props) {
     search();
   }
 
-  if (loaded) {
+  if (loaded && !error) {
     return (
       <div className="Dictionary mt-4">
         <section>
@@ -56,6 +61,24 @@ export default function Dictionary(props) {
         </section>
         <Results results={results} />
         <Images images={images} alt={keyword} />
+      </div>
+    );
+  } else if (loaded && error) {
+    return (
+      <div className="Dictionary mt-4">
+        <section>
+          <h3>What word do you want to look up?</h3>
+          <form onSubmit={handleSubmit}>
+            <input type="search" onChange={handleKeywordChange} />
+          </form>
+          <small>e.g. sunset, code, matcha, recording</small>
+        </section>
+        <section>
+          <h3>
+            Sorry, we couldn't find the definition of "{keyword}" for you 😔
+            Please, feel free to search for another word though!
+          </h3>
+        </section>
       </div>
     );
   } else {
