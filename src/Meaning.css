@@ -1,0 +1,12 @@
+.col-1 {
+  width: 30px;
+}
+
+.definition {
+  font-weight: 400;
+}
+
+.example {
+  color: #808080;
+  font-style: italic;
+}
