@@ -1,16 +1,12 @@
 .App {
   margin: 0 auto;
   max-width: 950px;
-  padding: 60px 30px;
+  padding: 60px 15px;
 }
 
 body {
   background-color: #f6f1ff;
-}
-
-header {
-  margin: 0 auto;
-  max-width: 500px;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -26,11 +22,29 @@ h1 {
 h2 {
   font-size: 36px;
 }
+
 h3 {
   font-size: 24px;
+  line-height: 1;
+}
+
+p {
+  font-weight: 400;
 }
 
 .special-text {
   color: #7d49ff;
   text-decoration: none;
+}
+
+.text-faded {
+  color: #808080;
+  font-style: italic;
+}
+
+.App-header .wordist-definition {
+  border: 3px dashed #e2d3ff;
+  margin: 0 auto;
+  max-width: 515px;
+  padding: 20px;
 }

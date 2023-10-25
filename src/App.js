@@ -7,8 +7,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="text-center">[Wordist] Dictionary</h1>
-        <h3 className="mt-4">noun</h3>
-        <p>someone who is passionate about words, language, or vocabulary</p>
+        <div className="wordist-definition mt-4">
+          <h3>
+            noun <span className="text-faded">• /wərdɪst/</span>
+          </h3>
+          <div>
+            someone who is passionate about words, language, or vocabulary
+          </div>
+        </div>
       </header>
       <main>
         <Dictionary />
