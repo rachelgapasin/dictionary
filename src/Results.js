@@ -27,6 +27,10 @@ export default function Results(props) {
       </div>
     );
   } else {
-    return null;
+    return (
+      <section>
+        <div>Cannot find the definition to this word :(</div>
+      </section>
+    );
   }
 }

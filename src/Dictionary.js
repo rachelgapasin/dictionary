@@ -22,8 +22,8 @@ export default function Dictionary(props) {
 
   function search() {
     // API documentation: https://dictionaryapi.dev
-    const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleDictionaryResponse);
+    const apiDictionaryUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiDictionaryUrl).then(handleDictionaryResponse);
 
     const imagesApiKey = "d60fd2e148aef51f4643441eotf6b3fb";
     const imagesApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${imagesApiKey}`;
