@@ -1,6 +1,7 @@
 section {
   background-color: #fff;
   border-radius: 8px;
+  box-shadow: rgba(78, 78, 78, 0.24) 0px 3px 8px;
   margin: 10px 0;
   padding: 40px;
 }
