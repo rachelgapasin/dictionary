@@ -2,6 +2,7 @@ import React from "react";
 
 import Phonetic from "./Phonetic";
 import Meaning from "./Meaning";
+import Images from "./Images";
 
 export default function Results(props) {
   if (props.results) {
@@ -24,9 +25,17 @@ export default function Results(props) {
             </section>
           );
         })}
+        <Images images={props.images} alt={props.keyword} />
       </div>
     );
   } else {
-    return null;
+    return (
+      <section className="Results">
+        <div className="text-center">
+          Sorry, we couldn't find the definition of "{props.keyword}" for you.
+          😔 Please, feel free to search for another word though!
+        </div>
+      </section>
+    );
   }
 }

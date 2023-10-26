@@ -14,11 +14,13 @@ function App() {
           <div>
             someone who is passionate about words, language, or vocabulary
           </div>
-          <div className="text-faded text-secondary">Want to become a wordist? Start by entering a word below!</div>
+          <div className="text-faded text-secondary">
+            Want to become a wordist? Start by entering a word below!
+          </div>
         </div>
       </header>
       <main>
-        <Dictionary defaultKeyword="cool"/>
+        <Dictionary defaultKeyword="code" />
       </main>
       <footer className="text-center">
         <a
