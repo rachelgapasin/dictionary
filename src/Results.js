@@ -5,7 +5,7 @@ import Meaning from "./Meaning";
 import Images from "./Images";
 
 export default function Results(props) {
-  if (props.results) {
+  if (props.results.word === props.keyword) {
     return (
       <div className="Results">
         <section>
@@ -32,8 +32,8 @@ export default function Results(props) {
     return (
       <section className="Results">
         <div className="text-center">
-          Sorry, we couldn't find the definition of "{props.keyword}" for you.
-          😔 Please, feel free to search for another word though!
+          😔 Sorry, we couldn't find the definition of "{props.keyword}" for
+          you. Please, feel free to search for another word though! 🤗
         </div>
       </section>
     );
